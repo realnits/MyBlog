@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Tale of Weird XSS into $100"
-date:   2021-10-13 21:39:54 +0530
+date:   2021-10-14 21:39:54 +0530
 ---
 
 ## Introduction 
