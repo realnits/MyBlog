@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Nithissh S
 pubDatetime: 2024-06-07T15:22:00Z
 modDatetime: 2024-06-07T09:12:47.400Z
 title: Hacking Porn and Dating Sites - A Theme-Based Bug Bounty Approach

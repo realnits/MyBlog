@@ -1,15 +1,15 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://tubular-faun-3cef3c.netlify.app/", // replace this with your deployed domain
-  author: "Nithissh's Blogs",
-  profile: "https://tubular-faun-3cef3c.netlify.app/",
+  website: "https://nithissh.xyz", // replace this with your deployed domain
+  author: "Nithissh",
+  profile: "https://nithissh.xyz",
   desc: "Hacker • AppSec Enthusiast • Bugbounty",
-  title: "AstroPaper",
+  title: "Nithissh's Blogs",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerIndex: 4,
-  postPerPage: 3,
+  postPerIndex: 5,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   editPost: {
