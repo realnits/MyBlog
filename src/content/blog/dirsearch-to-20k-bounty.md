@@ -41,7 +41,7 @@ When Visiting the Hidden EC2 instances from the source code , It gave me 403 For
 
 Ever stumbled upon a **403 Forbidden** or **404 Not Found** error while browsing a webpage? It’s frustrating, right? But for a security enthusiast, these errors can be intriguing entry points. One common approach I use to investigate further is **Directory Fuzzing**—and in this case, I used **Dirsearch**, a popular tool for directory enumeration.
 
-#### Step 1: Fuzzing the Target Directory
+### Step 1: Fuzzing the Target Directory
 
 I started by running the following Dirsearch command:
 
@@ -53,7 +53,7 @@ This command scans the target URL with a wide range of file extensions such as `
 
 Interestingly, Dirsearch hit upon a **200 OK** response for the `/app` directory, but when I visited the URL directly, it gave me a blank page. Not giving up, I decided to go deeper and launched another round of Dirsearch on the discovered `/app` path.
 
-#### Step 2: Digging Deeper
+### Step 2: Digging Deeper
 
 Now, I updated my Dirsearch scan to focus on the `/app` directory:
 
@@ -63,7 +63,7 @@ dirsearch -e conf,config,bak,backup,swp,old,db,sql,asp,aspx,py,rb,php,tar,log,tx
 
 This time, I struck gold: **/app/customer.csv** was discovered. Upon visiting the URL, the file was downloaded to my system.
 
-#### Step 3: Jackpot! Sensitive Data Found
+### Step 3: Jackpot! Sensitive Data Found
 
 Opening the `customer.csv` file revealed something that should never be publicly accessible—**Personal Identifiable Information (PII)**, including **user credentials**, **credit card details**, and other sensitive customer information. 
 
