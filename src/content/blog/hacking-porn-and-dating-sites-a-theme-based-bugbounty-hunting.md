@@ -64,6 +64,8 @@ The second program is Pornhub, which was formerly hosted on Hackerone as a priva
 
 ## Matrix Table for Triage and Payments
 
+</br>
+
 | Program Name         | Bounty Payments      | Triage time       | Bounty time    | Resolution time                 |
 |----------------------|----------------------|-------------------|----------------|---------------------------------|
 | PornHub              | 50\$ - 5000\$          | 2 days            | 10 days        | Depends on the severity ( SLA ) |
