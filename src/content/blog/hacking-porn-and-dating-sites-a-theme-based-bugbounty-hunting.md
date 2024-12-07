@@ -3,7 +3,7 @@ author: Sat Naing
 pubDatetime: 2024-06-07T15:22:00Z
 modDatetime: 2024-06-07T09:12:47.400Z
 title: 
-slug: hacking-porn-and-dating-sites-a-theme-based-bugbounty
+slug: hacking-porn-and-dating-sites-a-theme-based-bugbounty-hunting
 featured: true
 draft: false
 tags:
