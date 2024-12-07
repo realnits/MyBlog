@@ -3,7 +3,7 @@ author: Nithissh S
 pubDatetime: 2024-09-09T15:22:00Z
 modDatetime: 2024-09-09T09:12:47.400Z
 title: SQL injection vulnerability allowing login bypass
-slug: sqli-portswigger-lab-9
+slug: sqli-portswigger-lab-10
 featured: false
 draft: false
 tags:
