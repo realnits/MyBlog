@@ -2,7 +2,7 @@
 author: Sat Naing
 pubDatetime: 2024-06-07T15:22:00Z
 modDatetime: 2024-06-07T09:12:47.400Z
-title: 
+title: Hacking Porn and Dating Sites - A Theme-Based Bug Bounty Approach
 slug: hacking-porn-and-dating-sites-a-theme-based-bugbounty-hunting
 featured: true
 draft: false
