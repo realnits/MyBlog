@@ -66,10 +66,11 @@ The second program is Pornhub, which was formerly hosted on Hackerone as a priva
 
 </br>
 
-| Program Name         | Bounty Payments      | Triage time       | Bounty time    | Resolution time                 |
+| Program Name         | Bounty Payments      | Triage Time       | Bounty Time    | Resolution Time                 |
 |----------------------|----------------------|-------------------|----------------|---------------------------------|
-| PornHub              | 50\$ - 5000\$          | 2 days            | 10 days        | Depends on the severity ( SLA ) |
-| XVideos              | 50\$ - 20,000\$        | 1 day             | 1 month        | 1 month                         |
+| PornHub              | $50 - $5,000         | 2 days            | 10 days        | Depends on the severity         |
+| XVideos              | $50 - $20,000        | 1 day             | 1 month        | 1 month                         |
+
 
 ## List of Findings
 
