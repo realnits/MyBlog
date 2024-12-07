@@ -14,11 +14,31 @@ description:
 
 ## Introduction 
 
-Hi folks , I hope so Every is doing good . One Mid afternoon in the work , I got some time to work on bugbounty . I usually don’t work on any platforms like hackerone , Intigriti or Bugcrowd . I always hunt using a Google dorking and I found a target with good scope and able to test broad functionality but there is twist out there . I don’t whether they respond or not . Some companies host a bugbounty program but usually they don’t respond . Usually in this case , I don’t completely engage me into the target . At first I will submit the low hanging bugs and wait for the response from the particular team
+Hi folks, I hope everyone is doing great!
+
+One mid-afternoon during work, I found some time to dive into bug bounty hunting. Unlike many others, I don’t usually work on platforms like HackerOne, Intigriti, or Bugcrowd. Instead, I rely on Google dorking to discover potential targets. This time, I came across a target with a promising scope and broad functionality to test.
+
+But there’s a twist! I’m not sure if they’ll respond. Some companies host bug bounty programs but tend to stay silent, leaving submissions unanswered. In such cases, I avoid fully committing to the target initially. Instead, I focus on identifying and submitting low-hanging bugs first. Then, I wait for the team’s response before investing more time into deeper testing.
 
 <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/VbE1xtnPHx6D34GXhv" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/outlander-tv-season-5-starz-VbE1xtnPHx6D34GXhv"></a></p>
 
-So , At first I gone through their Bugbounty policy as they mentioned everything under the wildcard *.example.com is in the scope . So, Without wasting the time . I started with the subdomain enumeration using subfinder , amass , assetfinder , crobat , github-subdomains , findomain and Subdomain bruteforcing using puredns with combination of both the jhaddix all.txt and Asssetnote best-dns-wordlist and Subdomain alteration with DNSCewl and puredns to resolve the file
+So, the first thing I did was go through their bug bounty policy. They explicitly mentioned that everything under the wildcard `*.example.com` was in scope. Without wasting any time, I jumped right into subdomain enumeration.  
+
+To cover as much ground as possible, I used a combination of tools and techniques:  
+
+1. **Subdomain Enumeration**:  
+   - **Tools Used**: `subfinder`, `amass`, `assetfinder`, `crobat`, `github-subdomains`, and `findomain`.  
+   - These tools helped me gather a comprehensive list of subdomains associated with the target.  
+
+2. **Subdomain Bruteforcing**:  
+   - **Tools Used**: `puredns` with the combined power of **jhaddix's `all.txt` wordlist** and **Assetnote's `best-dns-wordlist`**.  
+   - This step ensured I could discover any hidden or less-obvious subdomains.
+
+3. **Subdomain Alteration**:  
+   - **Tools Used**: `DNSCewl` and `puredns`.  
+   - This technique involved manipulating and generating variations of known subdomains to uncover potential vulnerabilities.  
+
+Finally, I used `puredns` to resolve the results and filter out any inactive subdomains. This approach gave me a solid foundation to start exploring the target.
 
 ## Recon flow 
 
