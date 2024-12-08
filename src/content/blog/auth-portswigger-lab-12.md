@@ -3,7 +3,7 @@ author: Nithissh S
 pubDatetime: 2024-10-18T15:22:00Z
 modDatetime: 2024-10-18T09:12:47.400Z
 title: Broken brute-force protection, IP block
-slug: auth-portswigger-lab-5
+slug: auth-portswigger-lab-12
 featured: false
 draft: false
 tags:
