@@ -3,7 +3,7 @@ author: Nithissh S
 pubDatetime: 2024-12-06T15:22:00Z
 modDatetime: 2024-12-06T09:12:47.400Z
 title: SSRF via flawed request parsing
-slug: hha-portswigger-lab-1
+slug: hha-portswigger-lab-3
 featured: false
 draft: false
 tags:
