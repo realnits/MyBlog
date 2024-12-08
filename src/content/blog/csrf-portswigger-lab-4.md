@@ -29,8 +29,6 @@ Once after login using the credentials `wiener:peter` provided in the lab object
 
 I've updated one of the csrf token kinda just changed the last value on `csrf` inside the `Cookie:` and as a response says that `CSRF token is invalid`
 
-![](../../assets/images/bscp/csrf/CSRF-14.png)
-
 Found that when we both values of the CSRF token are same and then request passes through 
 
 ![](../../assets/images/bscp/csrf/csrf-15.png) 
