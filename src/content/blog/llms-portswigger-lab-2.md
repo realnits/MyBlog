@@ -2,7 +2,7 @@
 author: Nithissh S
 pubDatetime: 2024-12-12T02:29:00Z
 modDatetime: 2024-12-12T02:29:47.400Z
-title: Exploiting vulnerabilities in LLM APIs
+title: Indirect Prompt Injection
 slug: llms-portswigger-lab-2
 featured: false
 draft: false
