@@ -8,7 +8,7 @@ featured: false
 draft: false
 tags:
   - BSCP
-  - OAuth authentication
+  - Oauth
 description:
   This lab gives you the option to attach a social media profile to your account so that you can log in via OAuth instead of using the normal username and password. Due to the insecure implementation of the OAuth flow by the client application, an attacker can manipulate this functionality to obtain access to other users' accounts. 
 ---
