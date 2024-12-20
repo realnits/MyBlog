@@ -57,3 +57,4 @@ Now we can just log out and login in again using social profile and we can see t
 To solve the lab, we can just go into the `Admin panel` and delete the user `carlos`
 
 ![](../../assets/images/bscp/oauth/oauth-4.png)
+
