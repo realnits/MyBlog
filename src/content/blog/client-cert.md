@@ -57,7 +57,7 @@ The following diagram illustrates the full process of a client-authenticated TLS
 
 ## Importance of Client Certificate Authentication  
 
-
 While server certificate authentication is commonplace, client certificates add an additional layer of security by verifying the client's identity. For this validation to succeed:  
+
 - The client certificate must be signed by a Certificate Authority (CA) trusted by the server.  
 - The client must prove ownership of the certificate by using its private key during the handshake.  
