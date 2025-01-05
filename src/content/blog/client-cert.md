@@ -1,9 +1,9 @@
 ---
 author: Nithissh S
-pubDatetime: 2025-01-05T11:22:00Z
-modDatetime: 2025-01-05T11:22:00Z
+pubDatetime: 2025-01-04T11:22:00Z
+modDatetime: 2025-01-04T11:22:00Z
 title: Understanding Client Certificate Authentication and the TLS Handshake
-slug: understanding-client-certificate-authentication-tls-handshake
+slug: client-cert
 featured: true
 draft: false
 tags:
