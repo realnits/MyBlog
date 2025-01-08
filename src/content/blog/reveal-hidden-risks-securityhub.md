@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
 pubDatetime: 2025-01-08T15:22:00Z
-modDatetime: 2025-01-08T09:12:47.400Z
+modDatetime: 2025-01-08T15:12:47.400Z
 title: Reveal Hidden risks using Securityhub
 slug: reveal-hidden-risks-securityhub
 featured: true
@@ -10,7 +10,7 @@ tags:
   - Pwnedlabs
   - AWS Securityhub
 description:
-  Walkthrough of exploring AWS securityhub and a simulation activity to identify an issue
+  Walkthrough of exploring AWS securityhub and a simulation activity to identify an issue that lead to some interesting findings
 ---
 
 ## Scenario 
