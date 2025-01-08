@@ -13,7 +13,7 @@ description:
   Walkthrough of Protostar from exploit exercises  
 ---
 
-### Scenario 
+# Scenario 
 
  
 
@@ -21,7 +21,7 @@ On your first day as a security analyst at Huge Logistics, you activate AWS Secu
 
   
 
-### Things provided in the lab 
+## Things provided in the lab 
 
  
 
@@ -33,7 +33,7 @@ On your first day as a security analyst at Huge Logistics, you activate AWS Secu
 
   
 
-### How Securityhub works?
+## How Securityhub works?
 
  
 
@@ -49,7 +49,7 @@ On your first day as a security analyst at Huge Logistics, you activate AWS Secu
 
   
 
-### Solution
+## Solution
 
 
 
@@ -104,7 +104,7 @@ One another interesting tab is the insights part where **it** provides a powerf
 
   
 
-### Understanding Findings 
+## Understanding Findings 
 
 
 
@@ -183,7 +183,7 @@ We can download the `flag.txt` file and this is content in that file `e8e98717c
 
   
 
-### Things I learned from this lab 
+## Things I learned from this lab 
 
 
 
