@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
-pubDatetime: 2025-02-08T15:22:00Z
-modDatetime: 2025-02-08T09:12:47.400Z
+pubDatetime: 2025-01-08T15:22:00Z
+modDatetime: 2025-01-08T09:12:47.400Z
 title: Reveal Hidden risks using Securityhub
 slug: reveal-hidden-risks-securityhub
 featured: true
