@@ -30,7 +30,7 @@
   }
   body {
     @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base selection:bg-skin-accent/70 selection:text-skin-inverted;
-    font-family: Monaco, 'Courier New', monospace; /* Add Monaco font */
+    font-family: 'Space Mono', 'Courier New', monospace; /* Add Monaco font */
   }
   section,
   footer {
