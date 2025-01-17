@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  /* Font Face Declarations */
+  @font-face {
+    font-family: 'Cascadia Mono';
+    src: local('Cascadia Mono'),
+         local('CascadiaMono-Regular');
+    font-display: swap;
+  }
+
   /* Light Theme Variables */
   :root,
   html[data-theme="light"] {
@@ -12,6 +20,7 @@
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
+    --font-mono: 'Cascadia Mono', Monaco, ui-monospace, SFMono-Regular, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
   }
 
   /* Dark Theme Variables */
@@ -39,7 +48,10 @@
   body {
     @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base 
            selection:bg-skin-accent/70 selection:text-skin-inverted;
-    font-family: 'Cascadia Code', 'Monaco', 'Courier New', monospace;
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga" 1, "calt" 1; /* Enable ligatures */
   }
 
   section,
@@ -47,25 +59,27 @@
     @apply mx-auto max-w-3xl px-4;
   }
 
-  /* Link Styles */
+  /* Link Styles - Enhanced for Better Focus States */
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
-           focus-visible:no-underline focus-visible:outline-dashed;
+           focus-visible:no-underline focus-visible:outline-dashed
+           transition-colors duration-200;
   }
 
-  /* SVG Icons */
+  /* SVG Icons - Improved Animation */
   svg {
     @apply inline-block h-6 w-6 fill-skin-base 
-           group-hover:fill-skin-accent;
+           group-hover:fill-skin-accent transition-colors duration-200;
   }
 
   svg.icon-tabler {
     @apply inline-block h-6 w-6 scale-125 fill-transparent 
            stroke-current stroke-2 opacity-90 
-           group-hover:fill-transparent sm:scale-110;
+           group-hover:fill-transparent sm:scale-110
+           transition-transform duration-200;
   }
 
-  /* Typography Styles */
+  /* Typography Styles - Enhanced Prose */
   .prose {
     @apply prose-headings:!mb-3 
            prose-headings:!text-skin-base 
@@ -83,6 +97,7 @@
            prose-code:rounded 
            prose-code:bg-skin-card/75 
            prose-code:p-1 
+           prose-code:!font-mono
            prose-code:before:!content-none 
            prose-code:after:!content-none 
            prose-ol:!text-skin-base 
@@ -90,87 +105,64 @@
            prose-ul:!text-skin-base 
            prose-li:marker:!text-skin-accent;
     
-    /* Table Styles */
+    /* Table Styles - Enhanced for Better Readability */
     @apply prose-table:text-skin-base 
            prose-th:border 
-           prose-th:border-skin-line 
+           prose-th:border-skin-line
+           prose-th:bg-skin-card/30
            prose-td:border 
-           prose-td:border-skin-line;
+           prose-td:border-skin-line
+           prose-td:p-2;
     
-    /* Image Styles */
+    /* Image Styles - Improved Borders */
     @apply prose-img:!my-2 
            prose-img:mx-auto 
            prose-img:border-2 
-           prose-img:border-skin-line 
+           prose-img:border-skin-line
+           prose-img:rounded-lg
            prose-hr:!border-skin-line;
   }
 
-  /* Prose Link Styles */
-  .prose a {
-    @apply break-words hover:!text-skin-accent;
+  /* Enhanced Code Block Styles */
+  pre:has(code) {
+    @apply border border-skin-line rounded-lg p-4 
+           backdrop-blur-sm bg-skin-card/30;
   }
 
-  /* Table Cell Padding */
-  .prose thead th:first-child,
-  tbody td:first-child,
-  tfoot td:first-child {
-    padding-left: 0.5714286em;
+  code,
+  blockquote {
+    word-wrap: break-word;
+    font-family: var(--font-mono);
   }
 
-  /* Table of Contents */
-  .prose h2#table-of-contents {
-    @apply mb-2;
+  pre > code {
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .prose h2#table-of-contents + p {
-    @apply hidden;
-  }
-
-  /* Details & Summary */
-  .prose details {
-    @apply inline-block cursor-pointer select-none text-skin-base;
-  }
-
-  .prose summary {
-    @apply focus-outline;
-  }
-
-  /* Scrollbar Styles */
+  /* Improved Scrollbar Styles */
   html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
   }
 
   ::-webkit-scrollbar {
-    @apply w-3;
+    @apply w-2;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-skin-fill;
+    @apply bg-skin-fill rounded-full;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-skin-card;
+    @apply bg-skin-card rounded-full transition-colors duration-200;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-skin-card-muted;
   }
 
-  /* Code Block Styles */
-  pre:has(code) {
-    @apply border border-skin-line;
-  }
-
-  code,
-  blockquote {
-    word-wrap: break-word;
-  }
-
-  pre > code {
-    white-space: pre;
-  }
-
-  /* Dark Theme Code Blocks */
+  /* Dark Theme Enhancements */
   html[data-theme="dark"] pre:has(code),
   html[data-theme="dark"] pre:has(code) span {
     color: var(--shiki-dark) !important;
@@ -189,6 +181,7 @@
 
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill 
-           focus-visible:no-underline focus-visible:outline-dashed;
+           focus-visible:no-underline focus-visible:outline-dashed
+           transition-all duration-200;
   }
 }
