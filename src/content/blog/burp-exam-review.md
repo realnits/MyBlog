@@ -1,15 +1,15 @@
 ---
 author: Nithissh S
 pubDatetime: 2025-01-22T15:22:00Z
-modDatetime: 2025-01-229T09:12:47.400Z
+modDatetime: 2025-01-22T09:12:47.400Z
 title: BurpSuite Certified Practitioner Exam Review 
 slug: bscp-exam-review
-featured: false
+featured: true
 draft: false
 tags:
   - AppSec
 description:
-  Some interesting learning on how we can find a way to get account ID through public s3 bucket 
+  I recently cleared the Burp Suite Certified Practitioner exam, and it was quite the journey! In this post, I’ll share my experiences, tips, and key takeaways to help anyone planning to take the exam or explore the PortSwigger Academy challenges. Let’s dive in!
 ---
 
 ### Introduction
