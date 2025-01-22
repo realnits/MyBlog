@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
 pubDatetime: 2024-10-27T15:22:00Z
-modDatetime: 2024-10-279T09:12:47.400Z
+modDatetime: 2024-10-27T09:12:47.400Z
 title: Identify Account ID from a Public s3 Bucket
 slug: identify-accountid-from-s3
 featured: false
