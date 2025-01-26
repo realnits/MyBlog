@@ -98,7 +98,7 @@
   /* Font configuration for Monaco */
   @layer base {
     body {
-      font-family: 'Monaco', 'Courier New', monospace;
+      font-family: 'Monaco', 'Cascadia mono', 'Courier New', monospace;
     }
   }
 }
