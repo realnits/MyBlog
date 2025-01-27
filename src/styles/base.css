@@ -1,24 +1,23 @@
-@import url('https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/index.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* Root Theme Variables */
   :root,
   html[data-theme="light"] {
-    /* Color Variables */
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
     --color-accent: 0, 108, 172;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
-    
-    /* Font Variables */
-    --font-mono: 'Cascadia Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 
+  /* Dark Theme Variables */
   html[data-theme="dark"] {
     --color-fill: 33, 39, 55;
     --color-text-base: 234, 237, 243;
@@ -67,111 +66,118 @@
   svg.icon-tabler {
     @apply inline-block h-6 w-6 scale-125 fill-transparent 
            stroke-current stroke-2 opacity-90 
-           group-hover:fill-transparent sm:scale-110
-           transition-transform duration-200;
-  }
-
-  /* Typography Styles */
-  .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-           prose-h3:italic prose-p:!text-skin-base 
-           prose-a:!text-skin-base prose-a:!decoration-dashed 
-           prose-a:underline-offset-8 hover:prose-a:text-skin-accent 
-           prose-blockquote:!border-l-skin-accent/50 
-           prose-blockquote:opacity-80 
-           prose-figcaption:!text-skin-base 
-           prose-figcaption:opacity-70 
-           prose-strong:!text-skin-base 
-           prose-code:rounded prose-code:bg-skin-card/75 
-           prose-code:p-1 prose-code:font-mono
-           prose-code:before:!content-none 
-           prose-code:after:!content-none 
-           prose-ol:!text-skin-base 
-           prose-ul:overflow-x-clip 
-           prose-ul:!text-skin-base 
-           prose-li:marker:!text-skin-accent 
-           prose-table:text-skin-base 
-           prose-th:border prose-th:border-skin-line 
-           prose-td:border prose-td:border-skin-line 
-           prose-img:!my-2 prose-img:mx-auto 
-           prose-img:border-2 prose-img:border-skin-line 
-           prose-hr:!border-skin-line;
-  }
-
-  .prose a {
-    @apply break-words hover:!text-skin-accent transition-colors duration-200;
-  }
-
-  /* Table Styles */
-  .prose thead th:first-child,
-  tbody td:first-child,
-  tfoot td:first-child {
-    @apply pl-4;
-  }
-
-  /* Table of Contents */
-  .prose h2#table-of-contents {
-    @apply mb-2;
-  }
-
-  .prose h2#table-of-contents + p {
-    @apply hidden;
-  }
-
-  /* Details/Summary */
-  .prose details {
-    @apply inline-block cursor-pointer select-none text-skin-base;
-  }
-
-  .prose summary {
-    @apply focus-outline;
-  }
-
-  /* Scrollbar Styles */
-  html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    @apply w-3;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-skin-fill;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-skin-card hover:bg-skin-card-muted 
-           transition-colors duration-200 rounded-full;
-  }
-
-  /* Code Block Styles */
-  pre:has(code) {
-    @apply border border-skin-line rounded-lg p-4;
-  }
-
-  code,
-  blockquote {
-    word-wrap: break-word;
-    font-family: var(--font-mono);
-  }
-
-  pre > code {
-    white-space: pre;
-  }
-
-  /* Dark Theme Code Blocks */
-  html[data-theme="dark"] pre:has(code),
-  html[data-theme="dark"] pre:has(code) span {
-    color: var(--shiki-dark) !important;
-    background-color: var(--shiki-dark-bg) !important;
-    font-style: var(--shiki-dark-font-style) !important;
-    font-weight: var(--shiki-dark-font-weight) !important;
-    text-decoration: var(--shiki-dark-text-decoration) !important;
+           group-hover:fill-transparent sm:scale-110;
   }
 }
 
+/* Prose Styles */
+.prose {
+  @apply prose-headings:!mb-3 
+         prose-headings:!text-skin-base 
+         prose-h3:italic 
+         prose-p:!text-skin-base 
+         prose-a:!text-skin-base 
+         prose-a:!decoration-dashed 
+         prose-a:underline-offset-8
+         hover:prose-a:text-skin-accent 
+         prose-blockquote:!border-l-skin-accent/50 
+         prose-blockquote:opacity-80 
+         prose-figcaption:!text-skin-base 
+         prose-figcaption:opacity-70 
+         prose-strong:!text-skin-base 
+         prose-code:rounded 
+         prose-code:bg-skin-card/75 
+         prose-code:p-1 
+         prose-code:font-mono
+         prose-code:before:!content-none 
+         prose-code:after:!content-none 
+         prose-ol:!text-skin-base 
+         prose-ul:overflow-x-clip 
+         prose-ul:!text-skin-base 
+         prose-li:marker:!text-skin-accent 
+         prose-table:text-skin-base 
+         prose-th:border 
+         prose-th:border-skin-line 
+         prose-td:border 
+         prose-td:border-skin-line 
+         prose-img:!my-2 
+         prose-img:mx-auto 
+         prose-img:border-2 
+         prose-img:border-skin-line 
+         prose-hr:!border-skin-line;
+}
+
+.prose a {
+  @apply break-words hover:!text-skin-accent transition-colors duration-200;
+}
+
+/* Table Styles */
+.prose thead th:first-child,
+tbody td:first-child,
+tfoot td:first-child {
+  @apply pl-4;
+}
+
+/* Table of Contents */
+.prose h2#table-of-contents {
+  @apply mb-2;
+}
+
+.prose h2#table-of-contents + p {
+  @apply hidden;
+}
+
+/* Details/Summary */
+.prose details {
+  @apply inline-block cursor-pointer select-none text-skin-base;
+}
+
+.prose summary {
+  @apply focus-outline;
+}
+
+/* Scrollbar Styles */
+html {
+  @apply overflow-y-scroll;
+}
+
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-skin-fill;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-skin-card hover:bg-skin-card-muted transition-colors duration-200;
+}
+
+/* Code Block Styles */
+pre:has(code) {
+  @apply border border-skin-line rounded-lg p-4;
+}
+
+code,
+blockquote {
+  @apply break-words font-mono;
+}
+
+pre > code {
+  @apply whitespace-pre;
+}
+
+/* Dark Theme Syntax Highlighting */
+html[data-theme="dark"] pre:has(code),
+html[data-theme="dark"] pre:has(code) span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* Utility Components */
 @layer components {
   .display-none {
     @apply hidden;
@@ -182,4 +188,3 @@
            focus-visible:no-underline focus-visible:outline-dashed;
   }
 }
-
