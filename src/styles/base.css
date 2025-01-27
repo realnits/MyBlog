@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* Theme Variables */
   :root,
   html[data-theme="light"] {
     --color-fill: 251, 254, 251;
@@ -26,17 +25,16 @@
     --color-border: 171, 75, 8;
   }
 
-  /* Theme Switch Icons */
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
   }
+
   #moon-svg,
   html[data-theme="dark"] #sun-svg {
     display: block;
   }
 
-  /* Base Elements */
   body {
     @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base 
            selection:bg-skin-accent/70 selection:text-skin-inverted;
@@ -50,13 +48,11 @@
 
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
-           focus-visible:no-underline focus-visible:outline-dashed
-           transition-colors duration-200;
+           focus-visible:no-underline focus-visible:outline-dashed;
   }
 
   svg {
-    @apply inline-block h-6 w-6 fill-skin-base 
-           group-hover:fill-skin-accent transition-colors duration-200;
+    @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
   }
 
   svg.icon-tabler {
@@ -66,7 +62,6 @@
   }
 }
 
-/* Prose Styles */
 .prose {
   @apply prose-headings:!mb-3 
          prose-headings:!text-skin-base 
@@ -74,8 +69,8 @@
          prose-p:!text-skin-base 
          prose-a:!text-skin-base 
          prose-a:!decoration-dashed 
-         prose-a:underline-offset-8
-         hover:prose-a:text-skin-accent 
+         prose-a:underline-offset-8 
+         hover:prose-a:text-skin-accent
          prose-blockquote:!border-l-skin-accent/50 
          prose-blockquote:opacity-80 
          prose-figcaption:!text-skin-base 
@@ -84,7 +79,6 @@
          prose-code:rounded 
          prose-code:bg-skin-card/75 
          prose-code:p-1 
-         prose-code:font-mono
          prose-code:before:!content-none 
          prose-code:after:!content-none 
          prose-ol:!text-skin-base 
@@ -104,102 +98,34 @@
 }
 
 .prose a {
-  @apply break-words hover:!text-skin-accent transition-colors duration-200;
+  @apply break-words hover:!text-skin-accent;
 }
 
-/* Table Styles */
 .prose thead th:first-child,
 tbody td:first-child,
 tfoot td:first-child {
-  @apply pl-4;
+  padding-left: 0.5714286em;
 }
 
-/* Code Block Styles */
-pre:has(code) {
-  @apply border border-skin-line rounded-lg p-4 
-         bg-gray-950 dark:bg-gray-900
-         my-4 w-full overflow-x-auto
-         shadow-lg relative;
+.prose h2#table-of-contents {
+  @apply mb-2;
 }
 
-:not(pre) > code {
-  @apply bg-gray-200 dark:bg-gray-800
-         text-gray-900 dark:text-gray-100
-         rounded px-1.5 py-0.5
-         font-mono text-sm;
+.prose details {
+  @apply inline-block cursor-pointer select-none text-skin-base;
 }
 
-pre > code {
-  @apply whitespace-pre text-gray-100
-         font-mono text-sm leading-relaxed
-         block w-full;
+.prose summary {
+  @apply focus-outline;
 }
 
-pre[class*="language-"]::before {
-  @apply content-[attr(class)] 
-         text-xs uppercase tracking-wide
-         absolute top-0 right-0
-         bg-gray-800 text-gray-300
-         py-1 px-2 rounded-bl;
+.prose h2#table-of-contents + p {
+  @apply hidden;
 }
 
-.line-numbers {
-  @apply relative pl-12;
-}
-
-.line-numbers .line-numbers-rows {
-  @apply absolute left-0 top-0
-         border-r border-gray-700
-         select-none text-gray-600
-         w-10 text-right pr-2;
-}
-
-/* Syntax Highlighting */
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  @apply text-gray-500;
-}
-
-.token.punctuation {
-  @apply text-gray-400;
-}
-
-.token.property,
-.token.keyword,
-.token.tag {
-  @apply text-blue-400;
-}
-
-.token.string {
-  @apply text-green-400;
-}
-
-.token.operator,
-.token.boolean,
-.token.number {
-  @apply text-yellow-400;
-}
-
-.token.function {
-  @apply text-purple-400;
-}
-
-/* Copy Button */
-.code-block-copy-button {
-  @apply absolute top-2 right-2
-         bg-gray-800 hover:bg-gray-700
-         text-gray-300 hover:text-white
-         rounded p-1.5
-         opacity-0 group-hover:opacity-100
-         transition-opacity duration-200
-         focus:outline-none focus:ring-2 focus:ring-blue-500;
-}
-
-/* Scrollbar Styles */
+/* ===== scrollbar ===== */
 html {
-  @apply overflow-y-scroll;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -211,275 +137,28 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-skin-card hover:bg-skin-card-muted transition-colors duration-200;
+  @apply bg-skin-card;
 }
 
-/* Dark Theme Code Highlighting */
-html[data-theme="dark"] pre:has(code),
-html[data-theme="dark"] pre:has(code) span {
-  color: var(--shiki-dark) !important;
-  background-color: var(--shiki-dark-bg) !important;
-  font-style: var(--shiki-dark-font-style) !important;
-  font-weight: var(--shiki-dark-font-weight) !important;
-  text-decoration: var(--shiki-dark-text-decoration) !important;
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-skin-card-muted;
 }
 
-/* Utility Components */
-@layer components {
-  .display-none {
-    @apply hidden;
-  }
-
-  .focus-outline {
-    @apply outline-2 outline-offset-1 outline-skin-fill 
-           focus-visible:no-underline focus-visible:outline-dashed;
-  }
-}
-
-/* Table of Contents */
-.prose h2#table-of-contents {
-  @apply mb-2;
-}
-
-.prose h2#table-of-contents + p {
-  @apply hidden;
-}
-
-/* Details/Summary */
-.prose details {
-  @apply inline-block cursor-pointer select-none text-skin-base;
-}
-
-.prose summary {
-  @apply focus-outline;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 640px) {
-  pre:has(code) {
-    @apply text-sm;
-  }
-  
-  .code-block-copy-button {
-    @apply opacity-100;
-  }
-}@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  /* Theme Variables */
-  :root,
-  html[data-theme="light"] {
-    --color-fill: 251, 254, 251;
-    --color-text-base: 40, 39, 40;
-    --color-accent: 0, 108, 172;
-    --color-card: 230, 230, 230;
-    --color-card-muted: 205, 205, 205;
-    --color-border: 236, 233, 233;
-    --font-mono: 'JetBrains Mono', monospace;
-  }
-
-  html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
-    --color-text-base: 234, 237, 243;
-    --color-accent: 255, 107, 1;
-    --color-card: 52, 63, 96;
-    --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
-  }
-
-  /* Theme Switch Icons */
-  #sun-svg,
-  html[data-theme="dark"] #moon-svg {
-    display: none;
-  }
-  #moon-svg,
-  html[data-theme="dark"] #sun-svg {
-    display: block;
-  }
-
-  /* Base Elements */
-  body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base 
-           selection:bg-skin-accent/70 selection:text-skin-inverted;
-    font-family: var(--font-mono);
-  }
-
-  section,
-  footer {
-    @apply mx-auto max-w-3xl px-4;
-  }
-
-  a {
-    @apply outline-2 outline-offset-1 outline-skin-fill 
-           focus-visible:no-underline focus-visible:outline-dashed
-           transition-colors duration-200;
-  }
-
-  svg {
-    @apply inline-block h-6 w-6 fill-skin-base 
-           group-hover:fill-skin-accent transition-colors duration-200;
-  }
-
-  svg.icon-tabler {
-    @apply inline-block h-6 w-6 scale-125 fill-transparent 
-           stroke-current stroke-2 opacity-90 
-           group-hover:fill-transparent sm:scale-110;
-  }
-}
-
-/* Prose Styles */
-.prose {
-  @apply prose-headings:!mb-3 
-         prose-headings:!text-skin-base 
-         prose-h3:italic 
-         prose-p:!text-skin-base 
-         prose-a:!text-skin-base 
-         prose-a:!decoration-dashed 
-         prose-a:underline-offset-8
-         hover:prose-a:text-skin-accent 
-         prose-blockquote:!border-l-skin-accent/50 
-         prose-blockquote:opacity-80 
-         prose-figcaption:!text-skin-base 
-         prose-figcaption:opacity-70 
-         prose-strong:!text-skin-base 
-         prose-code:rounded 
-         prose-code:bg-skin-card/75 
-         prose-code:p-1 
-         prose-code:font-mono
-         prose-code:before:!content-none 
-         prose-code:after:!content-none 
-         prose-ol:!text-skin-base 
-         prose-ul:overflow-x-clip 
-         prose-ul:!text-skin-base 
-         prose-li:marker:!text-skin-accent 
-         prose-table:text-skin-base 
-         prose-th:border 
-         prose-th:border-skin-line 
-         prose-td:border 
-         prose-td:border-skin-line 
-         prose-img:!my-2 
-         prose-img:mx-auto 
-         prose-img:border-2 
-         prose-img:border-skin-line 
-         prose-hr:!border-skin-line;
-}
-
-.prose a {
-  @apply break-words hover:!text-skin-accent transition-colors duration-200;
-}
-
-/* Table Styles */
-.prose thead th:first-child,
-tbody td:first-child,
-tfoot td:first-child {
-  @apply pl-4;
-}
-
-/* Code Block Styles */
+/* ===== Code Blocks & Syntax Highlighting ===== */
 pre:has(code) {
-  @apply border border-skin-line rounded-lg p-4 
-         bg-gray-950 dark:bg-gray-900
-         my-4 w-full overflow-x-auto
-         shadow-lg relative;
+  @apply border border-skin-line;
 }
 
-:not(pre) > code {
-  @apply bg-gray-200 dark:bg-gray-800
-         text-gray-900 dark:text-gray-100
-         rounded px-1.5 py-0.5
-         font-mono text-sm;
+code,
+blockquote {
+  word-wrap: break-word;
 }
 
 pre > code {
-  @apply whitespace-pre text-gray-100
-         font-mono text-sm leading-relaxed
-         block w-full;
+  white-space: pre;
 }
 
-pre[class*="language-"]::before {
-  @apply content-[attr(class)] 
-         text-xs uppercase tracking-wide
-         absolute top-0 right-0
-         bg-gray-800 text-gray-300
-         py-1 px-2 rounded-bl;
-}
-
-.line-numbers {
-  @apply relative pl-12;
-}
-
-.line-numbers .line-numbers-rows {
-  @apply absolute left-0 top-0
-         border-r border-gray-700
-         select-none text-gray-600
-         w-10 text-right pr-2;
-}
-
-/* Syntax Highlighting */
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  @apply text-gray-500;
-}
-
-.token.punctuation {
-  @apply text-gray-400;
-}
-
-.token.property,
-.token.keyword,
-.token.tag {
-  @apply text-blue-400;
-}
-
-.token.string {
-  @apply text-green-400;
-}
-
-.token.operator,
-.token.boolean,
-.token.number {
-  @apply text-yellow-400;
-}
-
-.token.function {
-  @apply text-purple-400;
-}
-
-/* Copy Button */
-.code-block-copy-button {
-  @apply absolute top-2 right-2
-         bg-gray-800 hover:bg-gray-700
-         text-gray-300 hover:text-white
-         rounded p-1.5
-         opacity-0 group-hover:opacity-100
-         transition-opacity duration-200
-         focus:outline-none focus:ring-2 focus:ring-blue-500;
-}
-
-/* Scrollbar Styles */
-html {
-  @apply overflow-y-scroll;
-}
-
-::-webkit-scrollbar {
-  @apply w-3;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-skin-fill;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-skin-card hover:bg-skin-card-muted transition-colors duration-200;
-}
-
-/* Dark Theme Code Highlighting */
+/* Apply Dark Theme (if multi-theme specified) */
 html[data-theme="dark"] pre:has(code),
 html[data-theme="dark"] pre:has(code) span {
   color: var(--shiki-dark) !important;
@@ -489,43 +168,13 @@ html[data-theme="dark"] pre:has(code) span {
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
 
-/* Utility Components */
 @layer components {
   .display-none {
     @apply hidden;
   }
-
+  
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill 
            focus-visible:no-underline focus-visible:outline-dashed;
-  }
-}
-
-/* Table of Contents */
-.prose h2#table-of-contents {
-  @apply mb-2;
-}
-
-.prose h2#table-of-contents + p {
-  @apply hidden;
-}
-
-/* Details/Summary */
-.prose details {
-  @apply inline-block cursor-pointer select-none text-skin-base;
-}
-
-.prose summary {
-  @apply focus-outline;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 640px) {
-  pre:has(code) {
-    @apply text-sm;
-  }
-  
-  .code-block-copy-button {
-    @apply opacity-100;
   }
 }
