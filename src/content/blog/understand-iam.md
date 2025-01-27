@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
 pubDatetime: 2025-01-27T15:22:00Z
-modDatetime: 2025-01-27T07:12:47.400Z
+modDatetime: 2025-01-27T16:12:47.400Z
 title: Understanding IAM Basics
 slug: understand-iam
 featured: false
