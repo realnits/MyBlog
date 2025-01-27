@@ -12,33 +12,82 @@ description:
   Some interesting learning on how we can find a way to get account ID through public s3 bucket 
 ---
 
-### Introduction 
+# My Journey to Becoming a Burp Suite Certified Practitioner
 
-I recently cleared the Burp Suite Certified Practitioner exam, and it was quite the journey! In this post, I’ll share my experiences, tips, and key takeaways to help those of you planning to take the exam or explore the PortSwigger Academy challenges. Let’s dive in!
+I recently passed the Burp Suite Certified Practitioner (BSCP) exam on my first attempt, and I'm excited to share my journey, preparation strategy, and insights that might help others pursuing this certification. The exam tests your web security knowledge and practical skills in a time-constrained environment, making thorough preparation essential.
 
-### Just a dirt background... 
+## Background and Initial Struggles
 
-It's been quite a journey for almost 4 months completely and let me explain you how i wasted my first 2 months while preparing for this certification actually.. Before even portswigger announced there certification back in time, I've completed the several labs like XSS, SQL injection, Access control, Business logics and most of the other labs..  But often ignored the hard things actually or took the shortcut paths like looking into the solution and solving directly.. 
+My preparation journey spanned about 4 months, though I'll admit the first two months weren't as productive as they could have been. Before PortSwigger announced the certification, I had already completed various labs covering XSS, SQL injection, Access control, and Business logic vulnerabilities. However, I often took shortcuts by jumping straight to solutions without deeply understanding the underlying concepts.
 
-Looking into the solution is fine but without understanding the context of exploitation like how the bug works? and how to exploit? and these things i don't understand 
+While looking at solutions isn't inherently wrong, I was missing crucial aspects:
+- Understanding how the vulnerabilities work at a fundamental level
+- Learning the methodology behind exploitation
+- Developing a systematic approach to problem-solving
 
-But recently my organization provided with the opportunity to take this exam actually and I thought why can't we do like reboot our web security knowledge like starting from scratch... Like entered into the pre-planning phase like making todolist of all the labs and day to day, I started solving the ones I was comfortable with rather than learning something hard.. Why I say hard things? Hard things are the ones you will learn something new and rather than getting comfortable with easy ones and eventually you won't learn because in my perspective when after completing half of the easy labs like XSS, Access control, File uploads.. I lost interest in solving hard challenges like Blind SQLi, Request smuggling and deserialization just because it's tough 
+## The Turning Point
 
-Let's have a look into how did I prepare in last few months and things that helped me out 
+Everything changed when my organization offered me the opportunity to take the exam. I decided to reboot my approach to web security learning, starting from scratch. Here's how I restructured my preparation:
 
-### Well, How did I prepare?
+1. Created a comprehensive todo list of all labs
+2. Started with familiar concepts to build confidence
+3. Gradually progressed to more challenging topics
+4. Focused on understanding rather than just completing labs
 
-- First things first, do stuffs you don't about and for me I listed vulnerabilities such as request smuggling, deserialization, Web cache poisoning 
-- Once after solving those challenges, eventually I took the mystery lab challenges on those labs and you can ask why mystery labs.. it will help out in improving recon skills to identify and exploit those vulnerabilities 
-- Next up the easy ones like Access control, SSRF, File upload and some others like these are easy challenges from my perspective and completed all the apprentice and practitioner labs. then took the mystery labs again for the easy challenge part 
-- Once after completing all the required labs for the exam, I took the practice exams around 4 - 5 times until I'm comfortable in identifying the vulnerabilities in limited amount of time to get prepared for the exam 
+## Effective Preparation Strategy
+
+### Phase 1: Tackling the Hard Stuff First
+I identified and prioritized challenging topics I wasn't comfortable with:
+- HTTP Request Smuggling
+- Insecure Deserialization
+- Web Cache Poisoning
+
+For each of these topics, I:
+- Completed all related labs
+- Took on mystery lab challenges to improve reconnaissance skills
+- Documented my methodology and key learnings
+
+### Phase 2: Reinforcing Fundamentals
+After mastering the challenging topics, I revisited "easier" vulnerabilities:
+- Access Control
+- SSRF
+- File Upload Vulnerabilities
+
+I completed all apprentice and practitioner-level labs in these categories, followed by mystery labs to sharpen my identification skills.
+
+### Phase 3: Exam Preparation
+- Took 4-5 practice exams to get comfortable with time constraints
+- Focused on quick vulnerability identification
+- Practiced efficient exploitation techniques
 
 ### Useful Resources 
 
 - [Burp Suite Certified Practitioner Exam Study from Botesjuan](https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study) - This is will helpful referring as guide / Handbook during exam 
 - [Ultimate BSCP guide from dingyshark](https://github.com/DingyShark/BurpSuiteCertifiedPractitioner) - Same like the previous one, But some extras added which were helpful actually 
 
-### Things to remember
+## Technical Tips and Considerations
 
-- If you are using macbook for the exam, try to utilise jdkv11 for utilising java deserialization scanner 
-- While solving labs such as XSS, Keep track of payloads for cookie stealing and most of thing will be available in above mentioned repositories
+1. **For MacBook Users**
+   - Use JDK v11 for Java deserialization scanner
+   - Ensures compatibility and optimal performance
+
+2. **XSS Preparation**
+   - Maintain a collection of cookie-stealing payloads
+   - Document successful exploitation techniques
+
+## Key Takeaways
+
+1. **Avoid Shortcuts**
+   - Understanding concepts is more important than rushing through labs
+   - Take time to analyze why exploits work
+
+2. **Progressive Learning**
+   - Start with challenging topics
+   - Use mystery labs to develop real-world skills
+   - Reinforce fundamentals through practice
+
+3. **Time Management**
+   - Practice working under time constraints
+   - Develop efficient methodology through practice exams
+
+Remember, the journey to BSCP certification is not just about passing an exam—it's about building a solid foundation in web security. Take your time to understand concepts thoroughly, and don't hesitate to revisit challenging topics until they become second nature.
