@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
 pubDatetime: 2025-01-22T15:22:00Z
-modDatetime: 2025-01-22T09:12:47.400Z
+modDatetime: 2025-01-22T07:12:47.400Z
 title: BurpSuite Certified Practitioner Exam Review 
 slug: bscp-exam-review
 featured: true
