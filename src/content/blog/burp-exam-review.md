@@ -8,8 +8,9 @@ featured: true
 draft: false
 tags:
   - AppSec
+  - Certification review
 description:
-  Some interesting learning on how we can find a way to get account ID through public s3 bucket 
+  Review of BSCP in a way possible to document 
 ---
 
 ## Introduction
