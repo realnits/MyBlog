@@ -2,7 +2,7 @@
 author: Nithissh S
 pubDatetime: 2025-01-22T15:22:00Z
 modDatetime: 2025-01-22T07:12:47.400Z
-title: BurpSuite Certified Practitioner Exam Review 
+title: My Journey to Becoming a Burp Suite Certified Practitioner
 slug: bscp-exam-review
 featured: true
 draft: false
@@ -12,7 +12,7 @@ description:
   Some interesting learning on how we can find a way to get account ID through public s3 bucket 
 ---
 
-# My Journey to Becoming a Burp Suite Certified Practitioner
+## Introduction
 
 I recently passed the Burp Suite Certified Practitioner (BSCP) exam on my first attempt, and I'm excited to share my journey, preparation strategy, and insights that might help others pursuing this certification. The exam tests your web security knowledge and practical skills in a time-constrained environment, making thorough preparation essential.
 
