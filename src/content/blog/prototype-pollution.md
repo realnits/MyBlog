@@ -12,7 +12,7 @@ description:
   Notes that I took while preparing for BSCP exam on prototype pollution lab
 ---
 
-### Understanding Prototypes
+## Understanding Prototypes
 
 Prototypes in JavaScript are like a blueprint. Every object gets default properties and behavior from this blueprint.
 
@@ -45,14 +45,14 @@ console.log(user.isAdmin); // Output: true (unintended!)
 - Now, any object created afterward will inherit `isAdmin: true`, whether or not it was meant to have it.
  
 
-### Flow diagram of above the example
+## Flow diagram of above the example
 
 
 ![](../../assets/images/proto.png)
 
   
 
-### Important points about **__proto__**
+## Important points about **__proto__**
 
 
 - `__proto__` is a built-in property that points to an object’s prototype, enabling objects to inherit properties and methods.
