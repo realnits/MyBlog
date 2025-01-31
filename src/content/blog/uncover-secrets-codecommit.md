@@ -55,8 +55,8 @@ And so these are the credentials actually which we actuall retrieved through it 
 
 |     |     |
 | --- | --- |
-| **AWS Access Key** | AKIA3NRSK2PTOA5KVIUF<br><br><br> |
-| **AWS Secret Key** | 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<br><br><br> |
+| **AWS Access Key** | AKIA3NRSK2PTOA5KVIVA<br><br><br> |
+| **AWS Secret Key** | iupVtWDRuAvxWZQRS8fk8FaqgC1hh6Pf3YZhgoNX1<br><br><br> |
 | **Region** | us-east-1 |
 
   
@@ -67,15 +67,15 @@ After configuring these credentials, we can see that this credentials belongs to
 
 ```sh
 nits@FWS-CHE-LT-8869 ~ % aws configure --profile pwnedlabs-008
-AWS Access Key ID [None]: AKIA3NRSK2PTOA5KVIUF
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: AKIA3NRSK2PTOA5KVJUF
+AWS Secret Access Key [None]: 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
 Default region name [None]: us-east-1
 Default output format [None]: 
 nits@FWS-CHE-LT-8869 ~ % aws sts get-caller-identity --profile pwnedlabs-008
 {
     "UserId": "AIDA3NRSK2PTAUXNEJTBN",
     "Account": "785010840550",
-    "Arn": "arn:aws:iam::785010840550:user/prod-deploy"
+    "Arn": "arn:aws:iam::785010840450:user/prod-deploy"
 }
 ```
 
@@ -96,7 +96,7 @@ Using awsenumerator, you can setup the credentials with the following command 
   
 
 ```sh
-nits@FWS-CHE-LT-8869 ~ % aws-enumerator cred -aws_access_key_id  -aws_region us-east-1  -aws_secret_access_key iupVtWDRuAvxWZQRS8fk8FaqgC1hh6Pf3YYgoNX1
+nits@FWS-CHE-LT-8869 ~ % aws-enumerator cred -aws_access_key_id <access_key> -aws_region us-east-1  -aws_secret_access_key <aws_secret_key>
 Message:  File .env with AWS credentials were created in current folder
 ```
 
@@ -305,8 +305,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // AWS Setup
-const AWS_ACCESS_KEY = 'AKIA3NRSK2PTLGAWWLTG';
-const AWS_SECRET_KEY = '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';
+const AWS_ACCESS_KEY = 'AKIA3NRSK2PTLGAWWLTH';
+const AWS_SECRET_KEY = '2wVww5VEAc65eWWmhsuZZvFETT7+ymYGLjmeChas';
 
 AWS.config.update({
     region: 'us-east-1',  // Change to your region
@@ -368,8 +368,8 @@ Looking into above javascript file, filtered out these things to configure the A
 
 |     |     |
 | --- | --- |
-| AWS Access key | AKIA3NRSK2PTLGAWWLTG<br><br><br> |
-| AWS Secret Key | 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<br><br><br> |
+| AWS Access key | AKIA3NRSK2PTLGAUWLTG<br><br><br> |
+| AWS Secret Key | 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<br><br><br> |
 | Region | us-east-1 |
 | Bucket name | vessel-tracking<br><br><br> |
 
@@ -381,8 +381,8 @@ Once after configuring those credentials, we can see that we do have access to t
 
 ```sh
 nits@FWS-CHE-LT-8869 ~ % aws configure --profile pwnedlabs-009
-AWS Access Key ID [None]: AKIA3NRSK2PTLGAWWLTG
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: AKIA3NRSK2PTLGAWWZH
+AWS Secret Access Key [None]: 2wVww5VEAc65eWWmhsuZZvFETT7+ymYGLjmeChas
 Default region name [None]: us-east-1
 Default output format [None]: 
 nits@FWS-CHE-LT-8869 ~ % aws s3 ls s3://vessel-tracking --profile pwnedlabs-009
