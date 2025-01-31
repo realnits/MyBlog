@@ -241,11 +241,7 @@ nits@FWS-CHE-LT-8869 ~ % aws codecommit get-commit --repository-name vessel-trac
 
   
 
-Now since there is commit been made by jose and after commit hash is
-
-`b63f0756ce162a3928c4470681cf18dd2e4e2d5a` and before commit hash is 
-
-`2272b1b6860912aa3b042caf9ee3aaef58b19cb1`⁠ we can compare both and see in which file they have made changes too
+Now since there is commit been made by jose and after commit hash is `b63f0756ce162a3928c4470681cf18dd2e4e2d5a` and before commit hash is `2272b1b6860912aa3b042caf9ee3aaef58b19cb1`⁠ we can compare both and see in which file they have made changes too
 
   
 
