@@ -4,7 +4,7 @@ pubDatetime: 2025-01-08T11:22:00Z
 modDatetime: 2025-01-08T11:22:00Z
 title: Reveal Hidden risks using Securityhub
 slug: reveal-hidden-risks-securityhub
-featured: true
+featured: false
 draft: false
 tags:
   - Pwnedlabs

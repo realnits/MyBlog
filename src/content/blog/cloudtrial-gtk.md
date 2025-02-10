@@ -4,7 +4,7 @@ pubDatetime: 2024-01-04T11:22:00Z
 modDatetime: 2024-01-04T11:22:00Z
 title: Getting to know about Cloudtrial
 slug: cloudtrial-gtk
-featured: true
+featured: false
 draft: false
 tags:
   - AWS

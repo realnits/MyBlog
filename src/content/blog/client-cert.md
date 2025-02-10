@@ -4,7 +4,7 @@ pubDatetime: 2025-01-04T11:22:00Z
 modDatetime: 2025-01-04T11:22:00Z
 title: Understanding Client Certificate Authentication and the TLS Handshake
 slug: client-cert
-featured: true
+featured: false
 draft: false
 tags:
   - Client Authentication

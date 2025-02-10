@@ -4,7 +4,7 @@ pubDatetime: 2024-01-24T11:22:00Z
 modDatetime: 2024-01-24T11:22:00Z
 title: DNS 101
 slug: dns-basics
-featured: true
+featured: false
 draft: false
 tags:
   - DNS

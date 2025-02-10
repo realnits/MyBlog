@@ -4,7 +4,7 @@ pubDatetime: 2025-01-31T10:22:00Z
 modDatetime: 2025-01-31T10:22:00Z
 title: Uncover Secrets in CodeCommit and Docker
 slug: uncover-secrets-codecommit
-featured: true
+featured: false
 draft: false
 tags:
   - Pwnedlabs
