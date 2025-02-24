@@ -1,7 +1,7 @@
 ---
 author: Nithissh S
 pubDatetime: 2025-02-24T15:22:00Z
-modDatetime: 2025-02-24T09:12:47.400Z
+modDatetime: 2025-02-24T15:22:00Z
 title: Identify the AWS Account ID from a Public S3 Bucket
 slug: identify-aws-accid-from-public-s3
 featured: true
