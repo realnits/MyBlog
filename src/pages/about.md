@@ -1,9 +1,9 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "About Me"
 ---
 
-## About Me  
+![](../assets/images/profile.jpg)
 
 Hey there! I’m **Nithissh**, a security engineer passionate about **application security, cloud security, and container security**.  
 
