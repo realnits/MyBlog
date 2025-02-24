@@ -30,8 +30,6 @@ The ability to expose and leverage even the smallest oversights is a coveted ski
 
 ### Also the thing mentioned in Lab objective 
 
-* * *
-
 The IAM user credentials you need are included in the entry point section, and the role you can assume is named `arn:aws:iam::427648302155:role/LeakyBucket`
 
   
