@@ -8,6 +8,8 @@ featured: false
 draft: false
 tags:
   - AWS
+  - Cloudtrial
+  - AWS Cloudtrial
 description:
   Getting to know about cloudtrial in a such a way to understad easily
 --- 

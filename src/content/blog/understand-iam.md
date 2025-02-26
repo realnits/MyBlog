@@ -8,6 +8,8 @@ featured: false
 draft: false
 tags:
   - CloudSec
+  - AWS
+  - AWS IAM
 description:
   Put in my notes as a blog for IAM in minimalist way
 ---

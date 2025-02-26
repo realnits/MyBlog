@@ -7,7 +7,9 @@ slug: identify-aws-accid-from-public-s3
 featured: true
 draft: false
 tags:
-  - Bugbounty
+  - Pwnedlabs
+  - CloudSec
+  - AWS
 description:
   Getting to know about how we can able to fecth a AWS account ID from a publicly available s3 bucket  
 ---

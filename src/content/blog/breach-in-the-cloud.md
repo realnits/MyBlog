@@ -9,6 +9,7 @@ draft: false
 tags:
   - CloudSec
   - AWS
+  - AWS Cloudtrial
   - Pwnedlabs
 description:
   This is a challenge from pwnedlabs where I've been provided with the cloudtrial logs and from there I've to do log analysis and trying to reproduce the attack from the attacker perspective 
