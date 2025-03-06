@@ -10,6 +10,7 @@ tags:
   - CloudSec
   - AWS
   - s3
+  - Pwnedlabs
 description:
   In this lab, we will be solving an lab with an attack vector through a s3 bucket versioning feature and through that we can able to exfil the secrets and elevating further more 
 ---
