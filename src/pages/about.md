@@ -11,4 +11,6 @@ I write about **penetration testing, cloud security, bug bounty, and security be
 
 This blog is my space to document insights, experiments, and security tips. If you're into breaking and securing things, stick around!  
 
+Peace out :-/
+
 🔗 **More about me**: [nithissh.xyz](https://nithissh.xyz)  
